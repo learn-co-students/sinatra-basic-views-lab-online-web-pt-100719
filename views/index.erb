@@ -7,5 +7,20 @@
       <h1>Buster's Best Bowling Alley</h1>
       <h2>Bet You Can't Bowl A Strike Every Time</h2>
       <p>97 Bowling Alley Lane, Boulder CO </p>
+
+      <% if 1 > 2 %>
+        <p>1 is greater than 2</p>
+      <% else %>
+        <p>2 is greater than 1</p>
+      <% end %>
+
+      <% (1..10).each do |s|%>
+        
+        This is number <%= s %> in the loop.
+        </br>
+        <% if s == 10 %>
+          STRIKE!
+        <% end %>
+      <% end %>
     </body>
 </html>
